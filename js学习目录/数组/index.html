@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1, 2, 3, 4, 5];
+        console.log(arr);//普通数组
+
+        var arr1 = [];
+        arr1[0] = "Irene"
+        arr1[1] = "Wendy"
+        console.log(arr1);//数组里可以先定义再赋值
+
+        var arr2 = [20,"Irene",true,null]
+        console.log(arr2);//数组中可以放任何类型的数据
+
+        var arr3 = [100,200,["Irene","Wendy"],300]
+        console.log(arr3);//数组中可以嵌套数组，叫做多维数组，目前这个例子是二维数组，数组的维度没有数量限制
+
+        var arr4 = ["Irene","Wendy","Bae"]
+        console.log(arr4[0]);//数组的索引从0开始，arr4[0]就是"Irene"
+        console.log(arr4[1]);//arr4[1]就是"Wendy"
+        console.log(arr4[2]);//arr4[2]就是"Bae"
+        console.log(arr4[3]);//arr4[3]是undefined，因为数组的长度是3，索引最大是2
+        console.log(arr4.length);//数组的长度是3
+
+
+
+
+    </script>
+</body>
+</html>

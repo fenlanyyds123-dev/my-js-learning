@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = "  hello world  ";
+        console.log(str);
+        console.log(str.trim());//trim方法可以去掉字符串两端的空格
+        console.log(str.trim().length);//trim方法可以去掉字符串两端的空格，并且返回去掉空格后的字符串的长度
+
+        var str2 ="\t\v\f\r\nhello world\f\r\n\v\t";
+        console.log(str2);
+        console.log(str2.trim());
+
+        var str3 = "   nihao   ";
+        console.log(str3.trimEnd());
+        console.log(str3.trimStart());
+
+
+
+    </script>
+</body>
+</html>

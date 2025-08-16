@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [1, 2, 3, 4, 5];
+        //循环 -> 数组的遍历
+        //length -> 数组的长度
+        for (var i = 0; i < arr.length; i++) {//i=0,1,2,3,4
+            console.log(arr[i]);//数组的for遍历，输出数组中的每一个元素
+        }
+
+        var a = 0;
+        while (a < arr.length) {
+            console.log(arr[a]);//数组的while遍历，输出数组中的每一个元素
+            a++;
+        }
+
+        var b = ["Irene", "Wendy", "Bae"]
+        for (var i in b) {
+            console.log(b[i]);//数组的for...in遍历，输出数组中的每一个元素
+        }
+    </script>
+</body>
+
+</html>

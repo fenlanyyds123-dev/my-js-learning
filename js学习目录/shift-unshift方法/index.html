@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1, 2, 3, 4, 5];
+        var result = arr.shift();
+        console.log(result);//1 shift方法删除数组的第一个元素
+
+        console.log(arr);//[2, 3, 4, 5]
+
+
+        var arr1 = ["Hello", "World"];
+        console.log(arr1.unshift("你好"));
+        console.log(arr1);//["你好", "Hello", "World"]
+
+
+
+        var arr2 = [1,2,3,4,5];
+        var item;
+        while(item = arr2.shift()){
+            console.log(item);//1 2 3 4 5
+
+        }
+        console.log(arr2);//[] 空数组
+
+
+
+    </script>
+</body>
+</html>
