@@ -1,0 +1,269 @@
+:root {
+    --google-grey-300-rgb: 218, 220, 224;
+    /* 基础灰色 */
+    --google-blue-600-rgb: 26, 115, 232;
+    --google-red-50-rgb: 255, 64, 50;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(60, 60, 60);
+    max-width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    max-width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-left {
+    width: 100px;
+    height: 48px;
+}
+
+.header-right {
+    height: 48px;
+    flex-basis: 240px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 16px;
+    padding-right: 10px;
+}
+
+.header-right .Gmail {
+    height: 100%;
+    max-width: 49px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+
+}
+
+.Gmail a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.header-right .picture {
+    height: 100%;
+    max-width: 28px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.picture a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.header-right .circlehidden {
+    height: 28px;
+    max-width: 28px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.circlehidden a {
+    display: flex;
+    align-items: center;
+}
+
+.circlehidden a img {
+    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(180deg);
+}
+
+.User {
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.User a {
+    display: flex;
+    align-items: center;
+}
+
+
+.User a img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.Google-logo {
+    min-height: 92px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 92px;
+}
+.Google-logo img{
+    width: 100%;
+    max-width: 280px;
+    height: 95px;
+    filter: invert(100%) brightness(100%);
+}
+
+.Google-search {
+    min-height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Google-search .Google-search-input {
+    min-height: 48px;
+    width: 100%;
+    max-width: 746px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    border-radius: 24px;
+    background-color: white;
+    margin-top: 38px;
+    padding-left: 16px;
+    gap: 16px;
+}
+
+.Google-search-input svg {
+    width: 24px;
+    height: 24px;
+}
+
+.Google-search-input input {
+    height: 30px;
+    width: 100%;
+    max-width: 600px;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    border: none;
+    /* 去掉边框 */
+    outline: none;
+    /* 去掉点击时的蓝色轮廓线 */
+}
+
+.micro-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.camera-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.web-icon {
+    width: 100%;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.icon1 {
+    width: 112px;
+    height: 112px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon2 {
+    width: 112px;
+    height: 112px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon3 {
+    width: 112px;
+    height: 112px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.icon1 .circleimg {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(var(--google-grey-300-rgb), 0.5);
+    /* 50%透明 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon1 p {
+    font-size: 14px;
+    color: white;
+    margin-top: 8px;
+}
+
+.icon2 .circleimg2 {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(var(--google-grey-300-rgb), 0.5);
+    /* 50%透明 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon2 p {
+    font-size: 14px;
+    color: white;
+    margin-top: 8px;
+}
+
+.icon3 svg {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(var(--google-blue-600-rgb), 0.5);
+
+    /* 50%透明 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon3 p {
+    font-size: 14px;
+    color: white;
+    margin-top: 8px;
+}
