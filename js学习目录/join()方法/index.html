@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1, 2, 3, 4, 5];
+        var result = arr.join();
+        console.log(result);//1,2,3,4,5
+        console.log(typeof result);//string
+        var result1 = arr.join("");
+        console.log(result1);//12345
+        console.log(typeof result1);//string
+        var result2 = arr.join("-");
+        console.log(result2);//1-2-3-4-5
+        console.log(typeof result2);//string
+
+        var arr1 =["Irene","Wendy","Bae"];
+        var myArr = arr1.join(" ");
+        console.log(myArr);//Irene Wendy Bae
+        console.log(myArr.split(" "));//["Irene","Wendy","Bae"]
+
+
+
+    </script>
+</body>
+</html>

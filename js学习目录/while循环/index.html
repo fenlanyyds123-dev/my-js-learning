@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = 1;
+        while (a <= 100) {
+            console.log(a);
+            a++;
+        }
+
+        var x = 1;
+        while (x <= 9) {
+            var y = 1;
+            document.write("<br>");
+            while (y <= x) {
+                document.write(x + "*" + y + "=" + x * y + "  ");
+                y++;
+            }
+            x++;
+        }
+
+        var sum = 0;
+        var i = 0;
+        while (i <= 100) {
+            i++;
+            sum += i;
+        }
+        console.log(sum);
+
+
+    </script>
+</body>
+
+</html>
