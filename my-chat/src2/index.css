@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color:#212121;
+}
+
+.placeholder:empty::before {
+  content: attr(data-placeholder);
+  color: #9ca3af; /* Tailwind gray-400 */
+  pointer-events: none;
+}
